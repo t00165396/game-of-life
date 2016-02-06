@@ -33,6 +33,7 @@ public class WhenCreatingANewGame {
         HttpServletRequest request = mock(HttpServletRequest.class);
         ModelAndView homeView = controller.firstGeneration(5, 5, request);
         assertThat(homeView.getModel().get("universe"), is(not(nullValue())));
+        System.out.print("test");
     }
 
     @Test
